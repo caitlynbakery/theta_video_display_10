@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:video_360/video_360.dart';
 
 class DropBoxScreen extends StatefulWidget {
@@ -87,6 +88,16 @@ class _DropBoxScreenState extends State<DropBoxScreen> {
                   ),
                 ],
               )
+            ],
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: const [
+              FaIcon(
+                FontAwesomeIcons.dropbox,
+                size: 80,
+                color: Colors.blue,
+              ),
             ],
           )
         ],

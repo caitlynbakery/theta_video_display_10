@@ -34,7 +34,7 @@ Each screen has `video_360` imported and uses the example from the plugin. To ch
 
 Below is an example of a github media file in 360 view: 
 
-![view](docs/github.gif)
+![view](docs/githubnew.gif)
 
 ## Additional Information
 

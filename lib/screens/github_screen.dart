@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:video_360/video_360.dart';
 
 class GithubScreen extends StatefulWidget {
@@ -87,6 +88,16 @@ class _GithubScreenState extends State<GithubScreen> {
                   ),
                 ],
               )
+            ],
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: const [
+              FaIcon(
+                FontAwesomeIcons.github,
+                size: 80,
+                color: Color.fromARGB(255, 87, 87, 87),
+              ),
             ],
           )
         ],
