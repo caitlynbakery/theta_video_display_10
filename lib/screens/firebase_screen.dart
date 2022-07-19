@@ -37,7 +37,7 @@ class _FireBaseScreenState extends State<FireBaseScreen> {
               child: Video360View(
                 onVideo360ViewCreated: _onVideo360ViewCreated,
                 url:
-                    'https://firebasestorage.googleapis.com/v0/b/oppkeytheta.appspot.com/o/oppkey_office.MP4?alt=media',
+                    'https://firebasestorage.googleapis.com/v0/b/oppkey-site.appspot.com/o/ricoh%2Foppkey_office.MP4?alt=media',
                 onPlayInfo: (Video360PlayInfo info) {
                   setState(() {
                     durationText = info.duration.toString();

@@ -26,10 +26,29 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("360 Video Storage")),
+      appBar: AppBar(title: const Text("360 Video Storage")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              TextButton(
+                  onPressed: () => showDialog(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                            title: Text('More Info'),
+                            content: Text(
+                                'THETA video files can be accessed on commercial cloud services to display in 360 view. We demo Github, Firebase and Dropbox.'),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context, "OK"),
+                                  child: Text('OK'))
+                            ],
+                          )),
+                  child: Text('more info')),
+            ],
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
